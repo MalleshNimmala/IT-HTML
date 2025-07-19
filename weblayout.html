@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB LAYOUT</title>
+     <style type="text/css">
+          
+         *{
+            margin : 0px;
+            padding :0px; 
+            font-family: Arial;
+            box-sizing:border-box;
+          
+         }
+         /* #div1{
+            width: 200%;
+            height:120px;
+            background-color: aqua;
+            padding-left: 50%;
+            padding-right:0%;
+            border-left: 30px solid black;
+            border-right: 30px solid black;
+            border-top: 30px solid black; 
+         }*/
+          #logo-div {
+        width: 100%;
+        min-height: 50px;
+        background-color:#00bffe;
+        padding-left: 2%;
+        line-height: 50px;
+        margin-bottom: 10px;
+        }
+         #nav-div{
+        width : 100%;
+        min-height: 20px;
+        background-color: rgb(255, 8, 152);
+        line-height: 30px;
+         margin-bottom: 10px;
+        text-align: center;
+    }
+      #header-banner-div {
+
+        width :100%;
+        min-height: 50px;
+        background-color: #ff4500;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 10px; 
+    }
+    #main-div {
+        width : 100%;
+        /* min-height: 400px;
+        background-color: rgb(255, 255, 255); */
+        margin-bottom: 10px;
+    }   
+
+ #sidebar-div {
+        width : 20%;
+        min-height: 400px; 
+        background-color: rgb(145, 247, 21);
+        float : left;
+        text-align: center;
+        line-height: 400px;
+        
+    }
+    #bodyarea-div {
+        width : 75%;
+        min-height: 400px; 
+        background-color: rgb(34, 31, 224);
+        float : right; 
+        text-align: center;
+        line-height: 400px;
+    }
+    .clearfix::after {
+
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #footer-div{
+        width : 100%;
+        height: 40px;
+        background-color:#fed700;
+        text-align: center;
+        line-height: 40px;
+    }
+     #wrapper-div {
+        /* width : 100%; */
+
+        width: 80%;
+        /* center align */
+        /* background-color: orange; */
+        margin: auto;
+        /* center align */
+
+    }
+    
+
+        </style>
+</head>
+<body>
+     <!-- <div id="div1">
+                DIV1 
+            </div>     -->
+     <div id="wrapper-div">
+        <div id="logo-div">
+            Logo
+        </div>
+    <div id="nav-div">
+          Nav
+    </div>
+  <div id="header-banner-div">
+          Header/Banner
+    </div>
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+            Side Bar 
+        </div>
+        <div id="bodyarea-div">
+            Body Area 
+        </div>
+    </div>
+    <div id="footer-div">
+            Footer
+         </div>
+    </div>
+
+</body>
+</html>
